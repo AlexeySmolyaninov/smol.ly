@@ -1,0 +1,23 @@
+{
+  "name": "smol.ly",
+  "version": "1.0.0",
+  "description": "## File structure - /client - view service (React/TS) - /service - business service (Node/Express/TS) - /infra - deploying to cloud (Cloud Heroku or AWS) - /robot - robot testing (Robot testing with Selenium) - /docker - Dockerfile and docker-compose files (Docker)",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd client && npm run ci:test && cd ../service && npm run test",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexeySmolyaninov/smol.ly.git"
+  },
+  "author": "Alexey Smolyaninov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexeySmolyaninov/smol.ly/issues"
+  },
+  "homepage": "https://github.com/AlexeySmolyaninov/smol.ly#readme",
+  "devDependencies": {
+    "husky": "^7.0.0"
+  }
+}
