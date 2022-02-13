@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cd client && npm run ci:test && cd ../service && npm run test",
+    "format": "prettier --write ./",
     "prepare": "husky install"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/AlexeySmolyaninov/smol.ly#readme",
   "devDependencies": {
-    "husky": "^7.0.0"
+    "husky": "^7.0.0",
+    "prettier": "^2.5.1"
   }
 }

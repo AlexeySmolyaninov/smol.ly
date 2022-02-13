@@ -1,6 +1,7 @@
 # Own representation of bit.ly service
 
 ## File structure
+
 - /client - view service (React/TS)
 - /service - business service (Node/Express/TS)
 - /infra - deploying to cloud (Cloud Heroku or AWS)
