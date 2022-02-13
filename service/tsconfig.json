@@ -10,5 +10,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "types": ["jest"]
-  }
+  },
+  "include": ["tests"]
 }
