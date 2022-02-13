@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "types": ["jest"]
   },
-  "include": ["src"]
+  "include": ["src"],
 }
