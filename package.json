@@ -4,8 +4,9 @@
   "description": "## File structure - /client - view service (React/TS) - /service - business service (Node/Express/TS) - /infra - deploying to cloud (Cloud Heroku or AWS) - /robot - robot testing (Robot testing with Selenium) - /docker - Dockerfile and docker-compose files (Docker)",
   "main": "index.js",
   "scripts": {
-    "test": "cd client && npm run ci:test && cd ../service && npm run test",
+    "test": "(cd client && npm run ci:test) && (cd service && npm run test)",
     "format": "prettier --write ./",
+    "lint": "(cd client && npm run lint) && (cd service && npm run lint)",
     "prepare": "husky install"
   },
   "repository": {

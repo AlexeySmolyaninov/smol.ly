@@ -11,7 +11,6 @@ describe('Testing Paths', () => {
     const data = { status: 'UP' };
     const response = await request(app).get('/api/health');
     expect(response.statusCode).toBe(200);
-    console.log(response.body);
     expect(response.body).toEqual(data);
   });
 });
