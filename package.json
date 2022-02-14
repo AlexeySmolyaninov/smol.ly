@@ -6,6 +6,7 @@
   "scripts": {
     "test": "cd client && npm run ci:test && cd ../service && npm run test",
     "format": "prettier --write ./",
+    "lint": "(cd client && npm run lint)",
     "prepare": "husky install"
   },
   "repository": {
