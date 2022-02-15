@@ -1,0 +1,8 @@
+FROM postgres:14
+ARG DB_PW \
+    DB_USER \
+    DB
+ENV POSTGRES_PASSWORD=$DB_PW \
+    POSTGRES_USER=$DB_USER \
+    POSTGRES_DB=$DB
+COPY db/sql/init-tables.sql /docker-entrypoint-initdb.d
